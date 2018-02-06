@@ -1,0 +1,51 @@
+Remember that you define an ADT as a class.
+
+Guess.h
+
+private:
+
+randomVector (will contain n random integers)
+
+ 
+
+public:
+
+startGuess member function
+
+createRandomNumber member function
+
+Possibly some other functions
+
+ 
+
+Guess.cpp
+
+Public Member function implementations
+
+- remember any member function can access the private variables so you do not need to create separate get and set member functions.
+
+ 
+
+main.cpp
+
+Calls the startGuess
+
+ 
+
+Psuedo-Code/Algorithm
+
+You will have to keep track of a few counters: the n (total number of guesses allowed), m (random range 1 to m), number found, number of tries (so far)
+
+ 
+
+1) Ask the user for the n (number of random numbers) and m (range from 1 to m)
+
+2) Populate the randomVector with "n" .push_backs and fill each with a random number in the range of 1 to m.
+	  Remember a vector is dynamic, so this is better than an array in this case.
+
+3) Read in a guess or set of guesses (with cin)...loop n times probably with a for loop.
+
+4) Now you have to compare the guess to each item against the randomVector (probably with another for loop going to the size of the randomVector) .  
+	If found, add one to the numFound variable then break out of the randomVector loop.  After breaking out of the loop, or going through all of the Random vectors, compare the numFound to the size of the random Vector.  If they are the same they win, if not you say how many were found, and go on to the next guess (Back to #3).
+
+Since the text is not clear, let's say that you guess 3 times before the game ends, unless you get it right on try one or two.
