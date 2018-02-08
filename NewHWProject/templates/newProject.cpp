@@ -14,7 +14,7 @@ int main( )
 	/*
 	Remember to
 	rename the files! :)
-	change the date in main.cpp, and the readme
+	change the date in the readme
 	change the class # in main.cpp and the readme
 	change the make file objects and exe name
 	*/

@@ -11,7 +11,7 @@ CXXFLAGS = -g -std=c++11
 
 LIBS = -lm
 
-OBJS = Main.o clasExample.o
+OBJS = Main.o classExample.o
 
 TARGET = <<change to name of exe>>
 

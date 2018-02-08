@@ -14,7 +14,7 @@ int main( )
 {
 	ifstream fin;
 	ofstream fout;
-    vector<string> fileList = {"newProject.cpp", "makefile", "Plan.txt", "Readme.txt"};
+    vector<string> fileList = {"newProject.cpp", "makefile", "Plan.txt", "Readme.md"};
 
 	createProject(fin, fout, fileList);
 }
